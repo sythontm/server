@@ -6,8 +6,8 @@ import asyncio, json, os, re
 #sero_bots kayon @xsiner0 
 api_id_bot = 25452436 # اب ايدي
 api_hash_bot = "dd2b02206af4c99774ae8dd2c698f75f" # اب هاش
-bot = TelegramClient("Bot", api_id_bot, api_hash_bot).start(bot_token="6296066335:AAGHGFuwYjJXv3SH-6m_7t3KDs4ighrRJmo")
-
+bot = TelegramClient("Bot", api_id_bot, api_hash_bot).start(bot_token=token)
+token = os.environ.get("TOKEN")
 
 owner_id = [5159123009] # ايديك
 collect, bots_to_collect, start_earn = True, [], False
